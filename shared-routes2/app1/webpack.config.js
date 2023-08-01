@@ -34,6 +34,8 @@ module.exports = {
       name: 'app1',
       filename: 'remoteEntry.js',
       remotes: {
+        // app2: 'ap2@http://localhost:3002/remoteEntry.js',
+        // 参考 https://www.webpackjs.com/concepts/module-federation#promisebaseddynamicremotes
         app2: `promise new Promise(function (resolve, reject) {
           var __webpack_error__ = new Error()
           if (typeof window["app2"] !== 'undefined') return resolve();

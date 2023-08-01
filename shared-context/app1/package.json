@@ -6,14 +6,14 @@
     "@babel/core": "7.12.10",
     "@babel/preset-react": "7.12.10",
     "babel-loader": "8.2.2",
-    "html-webpack-plugin": "4.5.1",
+    "html-webpack-plugin": "^5.0.0",
     "serve": "11.3.2",
-    "webpack": "5.18.0",
-    "webpack-cli": "4.3.1",
+    "webpack": "5.28.0",
+    "webpack-cli": "^4.9.1",
     "webpack-dev-server": "3.11.2"
   },
   "scripts": {
-    "start": "webpack-cli serve",
+    "start": "npx webpack-cli serve",
     "build": "webpack --mode production",
     "serve": "serve dist -p 3001",
     "clean": "rm -rf dist"

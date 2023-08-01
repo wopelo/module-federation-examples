@@ -5,8 +5,5 @@
     "build": "npx lerna run --scope @shared-context/* build",
     "serve": "npx lerna run --scope @shared-context/* --parallel serve",
     "clean": "npx lerna run --scope @shared-context/* --parallel clean"
-  },
-  "devDependencies": {
-    "lerna": "3.22.1"
   }
 }
