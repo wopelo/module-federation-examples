@@ -11,8 +11,5 @@
     "build": "npx lerna run build",
     "serve": "npx lerna run --parallel serve",
     "clean": "npx lerna run --parallel clean"
-  },
-  "devDependencies": {
-    "lerna": "3.22.1"
   }
 }

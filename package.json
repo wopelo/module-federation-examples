@@ -11,7 +11,8 @@
   "private": true,
   "workspaces": [
     "./shared-context/*",
-    "./shared-routes2/*"
+    "./shared-routes2/*",
+    "./different-react-versions-16-18/*"
   ],
   "devDependencies": {
     "@shelex/cypress-allure-plugin": "2.38.3",

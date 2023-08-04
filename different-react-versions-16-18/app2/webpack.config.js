@@ -9,9 +9,7 @@ const webpackConfig = {
   entry: './src/index',
   mode: 'development',
   devServer: {
-    static: {
-      directory: path.join(__dirname, 'dist'),
-    },
+    contentBase: path.join(__dirname, "dist"),
     port: 3002,
   },
   output: {
@@ -54,7 +52,7 @@ const webpackConfig = {
             import: 'react', // the "react" package will be used a provided and fallback module
             shareKey: 'newReact', // under this name the shared module will be placed in the share scope
             shareScope: 'default', // share scope with this name will be used
-            singleton: true, // only a single version of the shared module is allowed
+            // singleton: true, // only a single version of the shared module is allowed
           },
           // reactNew: {
           //   import: "react", // the "react" package will be used a provided and fallback module

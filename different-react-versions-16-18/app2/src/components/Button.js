@@ -1,12 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-const Button = () => (
-  <div>
+console.log(`APP2 React version: ${React.version}`);
+
+const Button = () => {
+  const [num, setNum] = useState(0)
+
+  return <div>
     <p>
       More react components from <strong>App2</strong> using non-legacy React to render
     </p>
-    <button>App 2 Button</button>
+    <button onClick={() => setNum(num + 1)}>App 2 Button { num }</button>
   </div>
-);
+};
 
 export default Button;
